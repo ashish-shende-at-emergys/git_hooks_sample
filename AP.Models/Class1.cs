@@ -1,4 +1,4 @@
-﻿namespace AP.Models
+namespace AP.Models
 {
     public class BaseModel
     {

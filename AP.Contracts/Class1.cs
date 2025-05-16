@@ -1,4 +1,4 @@
-﻿namespace Models.Contracts
+namespace Models.Contracts
 {
     public class Class1
     {

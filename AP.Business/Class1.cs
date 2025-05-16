@@ -1,4 +1,4 @@
-﻿namespace AP.Business
+namespace AP.Business
 {
     public class Class1
     {

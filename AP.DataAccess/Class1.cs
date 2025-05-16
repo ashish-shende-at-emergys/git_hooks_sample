@@ -1,4 +1,4 @@
-﻿namespace AP.DataAccess
+namespace AP.DataAccess
 {
     public class Class1
     {
