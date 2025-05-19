@@ -6,7 +6,7 @@ namespace WebApplication1.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private string API_KEY = "47a383dca7d0ac4ec3526145ea3f51e5cfeac8d2";
+        private string API_KEY = "051eb6676d10060a0053bf7c15a4f7f8df1b5bd8";
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
