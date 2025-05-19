@@ -1,3 +1,4 @@
+
 @echo off
 REM This batch file automates the process of updating your current Git branch
 REM with the latest changes from various branches based on your current branch.
@@ -23,20 +24,27 @@ echo Current branch is: %current_branch%
 echo.
 pause
 
+
+echo Handle Logic based on branch name
 REM Step 2: Handle main, qa, or dev branch
-if "%current_branch%"=="main" (
+IF "%current_branch%" == "main" (
     echo On 'main' branch. Proceeding to fetch and pull...
     goto :fetch_pull_main_qa_dev
-) else if "%current_branch%"=="qa" (
+)
+
+IF "%current_branch%" == "qa" (
     echo On 'qa' branch. Proceeding to fetch and pull...
     goto :fetch_pull_main_qa_dev
-) else if "%current_branch%"=="dev" (
+)
+
+IF "%current_branch%" == "dev" (
     echo On 'dev' branch. Proceeding to fetch and pull...
     goto :fetch_pull_main_qa_dev
-) else (
-    echo On a feature branch ('%current_branch%'). Proceeding with feature branch update...
-    goto :handle_feature_branch
 )
+
+REM Fallback for other branches
+echo On a feature branch ('%current_branch%'). Proceeding with feature branch update...
+goto :handle_feature_branch
 
 :fetch_pull_main_qa_dev
     REM 2.1 git fetch --all
